@@ -1,28 +1,28 @@
 class Kept < Formula
   desc "Local semantic memory for coding agents: markdown notes in, a 200 MB search engine out"
   homepage "https://github.com/codexofc/kept"
-  version "0.6.0"
+  version "0.6.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/codexofc/kept/releases/download/v0.6.0/kept-v0.6.0-aarch64-apple-darwin.tar.gz"
-      sha256 "124c77614f7ccc5297734db9cff8267ce28bb1a7a70b18fedb6faac6d86e724f"
+      url "https://github.com/codexofc/kept/releases/download/v0.6.1/kept-v0.6.1-aarch64-apple-darwin.tar.gz"
+      sha256 "3a94f1a1e1c3d333856e6b0429dec171956fb6c4e3b90549cbbd3e2d4eb76cf9"
     end
     on_intel do
-      url "https://github.com/codexofc/kept/releases/download/v0.6.0/kept-v0.6.0-x86_64-apple-darwin.tar.gz"
-      sha256 "864b032599a1f8163f266ec6a3a0db75f5863642ff7331e373818f40eee2e780"
+      url "https://github.com/codexofc/kept/releases/download/v0.6.1/kept-v0.6.1-x86_64-apple-darwin.tar.gz"
+      sha256 "eff068f98a9c7726198044c6e99cc73fef3a6c1577d82237c5f201ed1f897879"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/codexofc/kept/releases/download/v0.6.0/kept-v0.6.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ad2c6f51f815748c1f21ece3c520e71fa037b7fd7e06a72d9f5e8a84e1b995c3"
+      url "https://github.com/codexofc/kept/releases/download/v0.6.1/kept-v0.6.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2b3267fec6042af4fdacd18c1a0127c87ddb0391bd8a3cfc1b3bde5732a81311"
     end
     on_intel do
-      url "https://github.com/codexofc/kept/releases/download/v0.6.0/kept-v0.6.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d4caed6c5660469af08c7872211f6535bb3a6489bd4238c6d25bf702ea5a8afa"
+      url "https://github.com/codexofc/kept/releases/download/v0.6.1/kept-v0.6.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "46c5e4520cd5931157dde4df8ea5f3642a0c1d4f0e49f492ed0b6b694bddcf01"
     end
   end
 
@@ -38,6 +38,6 @@ class Kept < Formula
   end
 
   test do
-    assert_match "kept 0.6.0", shell_output("#{bin}/kept version")
+    assert_match "kept 0.6.1", shell_output("#{bin}/kept version")
   end
 end
